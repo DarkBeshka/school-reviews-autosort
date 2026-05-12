@@ -38,18 +38,17 @@ flowchart LR
 review_processing_system/
 ├── config/
 │   ├── __init__.py
-│   ├── settings.py           # Константы: ID таблиц, пороги, пути
-│   └── keywords.txt          # Список ключевых слов
+│   └── settings.py           # Константы: ID таблиц, пороги, пути
 ├── course_lists/             # Списки курсов по направлениям (.txt)
 │   ├── programming_courses.txt
 │   ├── art_courses.txt
 │   ├── game_courses.txt
 │   └── robots_courses.txt
-├── credentials/              # Чувствительные данные (в .gitignore!)
+├── credentials/              # Ключи сервисного аккаунта Google
 │   └── credentials_all.json
 ├── data/
-│   ├── raw/                  # Исходные датасеты
-│   ├── labeled/              # Размеченные данные для обучения
+│   ├── raw/                  # Исходные датасеты (не включены)
+│   ├── labeled/              # Размеченные данные для обучения (не включены)
 │   └── models/               # Сохранённые модели (.pkl)
 ├── logs/                     # Логи работы системы
 │   └── processing.log
@@ -68,13 +67,9 @@ review_processing_system/
 │   ├── course_matcher.py     # Определение направления курса
 │   ├── data_processor.py     # Главный пайплайн обработки
 │   └── utils.py
-├── tests/                    # Модульные тесты
-│   ├── test_preprocessor.py
-│   └── test_rule_engine.py
 ├── .gitignore
 ├── README.md                 # Описание проекта и инструкция
-├── requirements.txt          # Зависимости проекта
-└── setup.py                  # Конфигурация установки (опционально)
+└── requirements.txt          # Зависимости проекта
 ```
 
 ## Используемые методы
