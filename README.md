@@ -137,19 +137,19 @@ pip install -r requirements.txt
 - Путь к JSON-ключу
 - Порог оценки и список ключевых слов
 
-### 4. Проверьте актуальность списка курсов в `course_lists/`
+Также проверьте актуальность списка курсов в `course_lists/`
 
-### 5. Запустите обучение на размеченных данных
+### 4. Запуск обучения на размеченных данных
 ```bash
 python scripts/train_model.py --data labeled_reviews.csv
 ```
 
-### 6. Запуск обработки
+### 5. Запуск обработки вручную
 
 ```bash
 python scripts/run_processing.py
 ```
 
-### 7. Настройка автоматического выполнения обработки
+### 6. Настройка автоматического выполнения обработки
 
-Настройте планировщик задач для ежедневного выполнения main.py. Видеоинструкция доступна по [ссылке](https://www.youtube.com/watch?v=T9A8TelGsdo&ab_channel=Jean-ChristopheChouinard).
+Настройте планировщик задач для ежедневного выполнения `run_processing.py`. Видеоинструкция для Windows доступна по [ссылке](https://www.youtube.com/watch?v=T9A8TelGsdo&ab_channel=Jean-ChristopheChouinard).
